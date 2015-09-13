@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    	<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Front-end Web Developer | Park Gyu-Ae</title>
+	    <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	    <!--[if lt IE 9]>
+	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <link href="css/style.css" rel="stylesheet">
+	    <script>
+	        document.createElement('header');
+	        document.createElement('nav');
+	        document.createElement('section');
+	        document.createElement('figure');
+	        document.createElement('article');
+	        document.createElement('aside');
+	        document.createElement('footer');
+	    </script>
+	    <![endif]-->
+	    <link rel="stylesheet" href="css/reset.css">
+	    <link rel="stylesheet" href="css/base.css">
+	    <link rel="stylesheet" href="css/layout.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <style>
+		    wrapper { width: 100%; height: 6645px; }
+		    header { width: 100%; height: 900px; }
+		    #header_wrap { width: 1170px; height: 800px; margin: 0 auto; }
+		    #content { width: 100%; height: 5385px; }
+		    #about { width: 100%; height: 780px; }
+		    #portfolio { width: 100%; height: 1305px; }
+		    #education { width: 100%; height: 1100px; }
+		    #skill { width: 100%; height: 1100px; }
+		    #contact { width: 100%; height: 1100px; }
+		    footer { width: 100%; height: 360px; }
+		    
+		    header { background: url("images/header_bg.jpg") no-repeat center; }
+		    #header_wrap { 
+			    padding: 50px 0;
+			    color: #fff; 
+			}
+		    #header_left, #header_right { width: 585px; height: 760px; float: left; }
+		    h1 { width: 70px; height: 70px; margin-bottom: 200px; }
+		    h1 a { 
+			    display: block; 
+			    width: 70px; 
+			    height: 70px;  
+			    line-height: 70px;
+			    border: 2px solid #fff; 
+			    border-radius: 37px; 
+			    text-align: center;
+			    color: #fff;
+			    font-size: 1.5em;
+				font-weight: 600;
+			}
+			#header_left p { font-size: 5.25em; font-weight: 800; }
+			#header_left span.notBold { font-weight: 400; text-decoration: line-through; }
+			.close_btn { text-align: right; margin-bottom: 255px; }
+			nav li { width: 270px; height: 45px; float: left; margin-bottom: 150px; }
+			nav li a { 
+				display: block; 
+				width: 270px; 
+				height: 45px; 
+				font-size: 1.8em; 
+				color: #fff; 
+				text-align: center;
+				background: url("images/nav_bg.png") no-repeat bottom;
+			}
+			.sns li { width: 24px; height: 24px; display: inline-block; margin-right: 20px; }
+			.sns li a { width: 24px; height: 24px; display: block; }
+		    .bg_color { background-color: #f7f7f1; }
+		    
+		    ::selection {
+			    background: rgba(27,173,138,.99);
+			    color: #fff;
+			    text-shadow: none;
+			}
+	    </style>
+    </head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="header_wrap">
+					<div id="header_left">
+						<h1>
+							<a href="#" title="Front-end Web Developer | Park Gyu-Ae">G.A</a>
+						</h1>
+						<p>THIS IS <span class="notBold">NOT</span> DIFFERENT PORTFOLIO</span></p>
+					</div>
+					<div id="header_right">
+						<p class="close_btn"><a href="#"><img src="images/close_btn.png" alt="닫기"></a></p>
+						<nav>
+							<h2 class="hid">주메뉴</h2>
+							<ul>
+								<li><a href="#about" title="about 바로가기">ABOUT</a></li>
+								<li><a href="#portfolio" title="portfolio 바로가기">PORTFOLIO</a></li>
+								<li><a href="#education" title="education 바로가기">EDUCATION</a></li>
+								<li><a href="#contact" title="contact 바로가기">CONTACT</a></li>
+							</ul>
+						</nav>
+					</div>
+					<ul class="sns">
+						<li>
+							<a href="#" title="트위터 바로가기">
+								<img src="images/twitter-icon-24_1.png" alt="twitter image">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="페이스북 바로가기">
+								<img src="images/facebook-icon-24_1.png" alt="facebook image">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="RSS 바로가기">
+								<img src="images/rss-icon-24_1.png" alt="rss image">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="이메일 바로가기">
+								<img src="images/email-icon-24_1.png" alt="email image">
+							</a>
+						</li>
+						<li>
+							<a href="#" title="안드로이드 마켓 바로가기">
+								<img src="images/android-icon-24_1.png" alt="android image">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div id="content">
+				<section id="about" class="bg_color">
+					<h3>HEY!</h3>
+				</section>
+				<section id="portfolio">
+					<h3>CHECK THIS OUT!</h3>
+				</section>
+				<section id="education" class="bg_color">
+					<h3>EDUCATION!</h3>
+				</section>
+				<section id="skill">
+					<h3>SKILL!</h3>
+				</section>
+				<section id="contact" class="bg_color">
+					<h3>GET IN TOUCH!</h3>
+				</section>
+			</div>
+			<footer></footer>
+		</div>
+	</body>
+</html>

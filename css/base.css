@@ -1,0 +1,19 @@
+body { font-family: 'Open Sans', sans-serif, 'nbg', '맑은 고딕'; font-size: 1em; line-height: 1; min-width: 320px; overflow-x: hidden; }
+
+a:link, a:visited, a:hover, a:focus {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    vertical-align:baseline;
+}
+
+img {
+    vertical-align:top;
+    max-width:100%;
+}
+
+.hid { position:absolute; left:-9999px; font-size:0; width:0; height:0; text-indent:-9999px; overflow:hidden; }
+
+/* 웹폰트 CSS */
+@font-face{ font-family:'nbg'; src:url("../fonts/NanumBarunGothic.eot"); }
+@font-face{ font-family:'nbg'; src:url("../fonts/NanumBarunGothic.woff"); }
