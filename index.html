@@ -32,7 +32,7 @@
 		    #content { width: 100%; height: 5385px; }
 		    #about { width: 100%; height: 480px; }
 		    #portfolio { width: 100%; height: 1005px; }
-		    #education { width: 100%; height: 1100px; }
+		    #education { width: 100%; height: 640px; }
 		    #skill { width: 100%; height: 1100px; }
 		    #contact { width: 100%; height: 1100px; }
 		    footer { width: 100%; height: 360px; }
@@ -49,7 +49,7 @@
 			    width: 70px; 
 			    height: 70px;  
 			    line-height: 70px;
-			    border: 2px solid #fff; 
+			    border: 3px solid #fff;
 			    border-radius: 37px; 
 			    text-align: center;
 			    color: #fff;
@@ -87,9 +87,21 @@
 			.innerWrap.iw2 { height: 1005px; }
 			#portfolio h3 { width: 322px; background: url("images/portfolio_tit_bg.png") no-repeat 185px 18px; padding-left: 48px; padding-bottom:
 			146px; }
-			#portfolio .nextLine { display: block; padding-left: 80px; }
+			.nextLine { display: block; padding-left: 80px; }
 			#portfolio li { width: 390px; height: 390px; float: left; }
 			#portfolio li.myhome { width: 780px; }
+			#education h3 { padding-bottom: 100px; text-align: center; background: url("images/portfolio_tit_bg.png") no-repeat 65px 18px; }
+			#education .nextLine { padding-left: 150px; }
+			.edu_java, .edu_frontend { width: 100%; height: 160px; }
+			#education { background: #f7f7f1 url("images/edu_bg.png") no-repeat 1300px 500px; }
+			#education article h4 { font-size: 1.9em; font-weight: 600; margin-bottom: 10px; }
+			time { font-size: 0.83em; line-height: 3em; }
+			#education p { width: 370px; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.3em; }
+			.edu_java { background: url("images/edu2.png") no-repeat 350px 20px; margin-bottom: 140px; }
+			.edu_java article { width: 570px; float: right }
+			.edu_frontend { background: url("images/edu1.png") no-repeat 640px 10px; }
+			#education .edu_frontend p { float: right; }
+			.edu_frontend article { width: 500px; text-align: right; }
 		    
 		    ::selection {
 			    background: rgba(27,173,138,.99);
@@ -199,8 +211,22 @@
 					</div>
 				</section>
 				<section id="education" class="bg_color">
-					<div class="innerWrap">
-						<h3>EDUCATION!</h3>
+					<div class="innerWrap iw3">
+						<h3><span class="nextLine">THE</span>EDUCATION!</h3>
+						<div class="edu_java">
+							<article>
+								<time pubdate="2015-07-28">2015년 07월 28일 수료</time>
+								<h4>웹퍼블리셔 기반의<br> 프론트엔드 개발자과정</h4>
+								<p>웹표준, 웹접근성, HTML5, CSS3, javascript, jQueryUI, 반응형 웹, PHP, MySQL</p>
+							</article>
+						</div>
+						<div class="edu_frontend">
+							<article>
+								<time pubdate="2011-10-07">2011년 10월 7일 수료</time>
+								<h4>Java Web programming<br> MASTER</h4>
+								<p>JAVA, JSP, MySQL, HTML, CSS</p>
+							</article>
+						</div>
 					</div>
 				</section>
 				<section id="skill">
