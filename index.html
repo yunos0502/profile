@@ -30,8 +30,8 @@
 		    header { width: 100%; height: 900px; }
 		    #header_wrap { width: 1170px; height: 800px; margin: 0 auto; }
 		    #content { width: 100%; height: 5385px; }
-		    #about { width: 100%; height: 780px; }
-		    #portfolio { width: 100%; height: 1305px; }
+		    #about { width: 100%; height: 480px; }
+		    #portfolio { width: 100%; height: 1005px; }
 		    #education { width: 100%; height: 1100px; }
 		    #skill { width: 100%; height: 1100px; }
 		    #contact { width: 100%; height: 1100px; }
@@ -71,7 +71,22 @@
 			}
 			.sns li { width: 24px; height: 24px; display: inline-block; margin-right: 20px; }
 			.sns li a { width: 24px; height: 24px; display: block; }
+			#content { color: #222; }
+			#content section { padding: 150px 0; }
 		    .bg_color { background-color: #f7f7f1; }
+			h3 { width: 370px; font-size: 2.5em; font-weight: 700; margin: 0 auto; padding-bottom: 35px; }
+			.innerWrap { width: 1170px; margin: 0 auto; position: relative; }
+			.innerWrap.iw1 { height: 480px; }
+			#about h3 { background: url("images/about_tit_bg.png") no-repeat 0px 17px; width: 105px; padding-left: 95px; }
+			.about_pic { width: 720px; }
+			.about_pic ul { float: left; margin-right: 10px; }
+			.pic_left {}
+			.pic_right {}
+			.pic_right li { height: 295px; overflow: hidden; }
+			.innerWrap.iw1 p { position: absolute; right: 0; bottom: 10px; width: 570px; text-align: left; font-size: 1.4em; line-height: 1.5em; }
+			.innerWrap.iw2 { height: 1005px; }
+			#portfolio h3 { width: 322px; background: url("images/portfolio_tit_bg.png") no-repeat 185px 18px; padding-left: 48px; }
+			#portfolio .nextLine { display: block; padding-left: 80px; }
 		    
 		    ::selection {
 			    background: rgba(27,173,138,.99);
@@ -88,7 +103,7 @@
 						<h1>
 							<a href="#" title="Front-end Web Developer | Park Gyu-Ae">G.A</a>
 						</h1>
-						<p>THIS IS <span class="notBold">NOT</span> DIFFERENT PORTFOLIO</span></p>
+						<p>THIS IS <span class="notBold">NOT</span> DIFFERENT PORTFOLIO</p>
 					</div>
 					<div id="header_right">
 						<p class="close_btn"><a href="#"><img src="images/close_btn.png" alt="닫기"></a></p>
@@ -133,19 +148,40 @@
 			</header>
 			<div id="content">
 				<section id="about" class="bg_color">
-					<h3>HEY!</h3>
+					<div class="innerWrap iw1">
+						<h3>HEY!</h3>
+						<div class="about_pic">
+							<ul class="pic_left">
+								<li><a href="#"><img src="images/me1.jpg" alt="about me"></a></li>
+								<!--li><a href="#"><img src="images/me2.jpg" alt="about me"></a></li-->
+							</ul>
+							<ul class="pic_right">
+								<li><a href="images/ddalgi.jpg"><img src="images/ddalgi.jpg" alt="about my cat"></a></li>
+								<!--li><a href="images/hodu.jpg"><img src="images/hodu.jpg" alt="about me"></a></li-->
+							</ul>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore texercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. (+) </p>
+					</div>
 				</section>
 				<section id="portfolio">
-					<h3>CHECK THIS OUT!</h3>
+					<div class="innerWrap iw2">
+						<h3>CHECK <span class="nextLine">THIS OUT!</span></h3>
+					</div>
 				</section>
 				<section id="education" class="bg_color">
-					<h3>EDUCATION!</h3>
+					<div class="innerWrap">
+						<h3>EDUCATION!</h3>
+					</div>
 				</section>
 				<section id="skill">
-					<h3>SKILL!</h3>
+					<div class="innerWrap">
+						<h3>SKILL!</h3>
+					</div>
 				</section>
 				<section id="contact" class="bg_color">
-					<h3>GET IN TOUCH!</h3>
+					<div class="innerWrap">
+						<h3>GET IN TOUCH!</h3>
+					</div>
 				</section>
 			</div>
 			<footer></footer>
