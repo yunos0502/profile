@@ -2,6 +2,7 @@ header { background: url("../images/header_bg.jpg") no-repeat center; }
 #header_wrap {
     padding: 50px 0;
     color: #fff;
+    position: relative;
 }
 #header_left, #header_right { width: 585px; height: 760px; float: left; }
 h1 { width: 70px; height: 70px; margin-bottom: 200px; }
@@ -17,9 +18,10 @@ h1 a {
     font-size: 1.5em;
     font-weight: 600;
 }
-#header_left p { font-size: 5.25em; font-weight: 800; }
+#header_left p { font-size: 5.25em; font-weight: 800; width: 585px; height: 252px; position: absolute; }
 #header_left span.notBold { font-weight: 400; text-decoration: line-through; }
-.close_btn { text-align: right; margin-bottom: 255px; }
+.close_btn { height: 24px; margin-bottom: 255px; }
+.close_btn a { display: block; width: 31px; height: 26px; background-image: url("../images/close_btn.png"); background-repeat: no-repeat; float: right; }
 nav li { width: 270px; height: 45px; float: left; margin-bottom: 150px; }
 nav li a {
     display: block;
@@ -30,8 +32,14 @@ nav li a {
     text-align: center;
     background: url("../images/nav_bg.png") no-repeat bottom;
 }
-.sns li { width: 24px; height: 24px; display: inline-block; margin-right: 20px; }
+.sns li { width: 24px; height: 24px; display: inline-block; margin: 17px 20px 0 0; }
 .sns li a { width: 24px; height: 24px; display: block; }
+.sns_twitter a { background: url("../images/twitter-icon-24_1.png") no-repeat; }
+.sns_facebook a { background: url("../images/facebook-icon-24_1.png") no-repeat; }
+.sns_rss a { background: url("../images/rss-icon-24_1.png") no-repeat; }
+.sns_email a { background: url("../images/email-icon-24_1.png") no-repeat; }
+.sns_android a { background: url("../images/android-icon-24_1.png") no-repeat; }
+
 #content { color: #222; }
 #content section { padding: 150px 0; }
 .bg_color { background-color: #f7f7f1; }
@@ -40,13 +48,13 @@ h3 { width: 370px; font-size: 2.5em; font-weight: 700; margin: 0 auto; padding-b
 .innerWrap.iw1 { height: 480px; }
 #about h3 { background: url("../images/about_tit_bg.png") no-repeat 0px 17px; width: 105px; padding-left: 95px; }
 .about_pic { width: 720px; }
-.about_pic ul { float: left; margin-right: 10px; }
-.pic_left {}
-.pic_right {}
-.pic_right li { height: 295px; overflow: hidden; }
-.aboutDesc { position: absolute; right: 0; bottom: 10px; width: 570px; text-align: left; font-size: 1.4em; line-height: 1.5em; }
+.pic_left { width: 300px; height: 400px; float: left; margin-right: 10px; overflow: hidden; cursor: pointer; }
+.pic_left img { position: absolute; }
+.pic_right { width: 400px; height: 295px; overflow: hidden; }
+.aboutDesc { position: absolute; right: 0; bottom: 0; width: 600px; text-align: left; font-size: 1.4em; line-height: 1.5em; background-color: rgba(255, 255, 255, 0.3); padding: 15px; }
 .adSkill { font-size: 0.6em; }
-.aboutMe { font-family:'nbg'; font-size: 0.9em; }
+.adSkill a { color: rgba(27,173,138,.99); }
+.aboutMe { font-family:'nbg'; font-size: 0.8em; }
 .innerWrap.iw2 { height: 1005px; }
 #portfolio h3 { width: 322px; background: url("../images/portfolio_tit_bg.png") no-repeat 185px 18px; padding-left: 48px; padding-bottom:
 146px; }
@@ -99,8 +107,14 @@ rgba(27,173,138,.99); color: #fff; font-weight: 800;
 .contactDesc h4 { font-size: 1.85em; font-weight: 600; margin-bottom: 15px; }
 .contactDesc address { font-family: 'Lato', sans-serif; font-size: 1.24em; font-weight: 100; line-height: 1.5em; margin-bottom: 15px; }
 .contactDesc p { font-size: 1.25em; text-decoration: underline; }
-.sns.s2 { margin-top: 150px; }
+.sns.s2 { margin-top: 134px; }
+.sns_twitter2 a { background: url("../images/twitter-icon-24_2.png") no-repeat; }
+.sns_facebook2 a { background: url("../images/facebook-icon-24_2.png") no-repeat; }
+.sns_rss2 a { background: url("../images/rss-icon-24_2.png") no-repeat; }
+.sns_email2 a { background: url("../images/email-icon-24_2.png") no-repeat; }
+.sns_android2 a { background: url("../images/android-icon-24_2.png") no-repeat; }
 #map { width: 670px; height: 400px; float: left; }
+
 footer { background: url("../images/footer_bg.png") no-repeat center; color: #fff; font-family: 'Lato', sans-serif; font-size: 1.18em;
     font-weight: 100; text-align: center; padding-top: 85px; }
 p.logo {

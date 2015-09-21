@@ -28,12 +28,6 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="js/gmaps.js"></script>
-
-	    <style>
-
-		    
-
-	    </style>
     </head>
 	<body>
 		<div id="wrapper">
@@ -46,7 +40,7 @@
 						<p>THIS IS <span class="notBold">NOT</span> DIFFERENT PORTFOLIO</p>
 					</div>
 					<div id="header_right">
-						<p class="close_btn"><a href="#"><img src="images/close_btn.png" alt="닫기"></a></p>
+						<p class="close_btn"><a href="#" title="메뉴"></a></p>
 						<nav>
 							<h2 class="hid">주메뉴</h2>
 							<ul>
@@ -57,31 +51,32 @@
 							</ul>
 						</nav>
 					</div>
+					<script>
+						$(function() {
+							$(".close_btn a").click(function() {
+								$(this).css({
+									'backgroundImage':'url("images/menu_btn.png")'
+								});
+								$('nav').hide();
+								$('#header_left p').animate({left: '30%'}, 1000);
+							});
+						});
+					</script>
 					<ul class="sns">
-						<li>
-							<a href="#" title="트위터 바로가기">
-								<img src="images/twitter-icon-24_1.png" alt="twitter image">
-							</a>
+						<li class="sns_twitter">
+							<a href="#" title="트위터 바로가기"><span class="hid">트위터</span></a>
 						</li>
-						<li>
-							<a href="#" title="페이스북 바로가기">
-								<img src="images/facebook-icon-24_1.png" alt="facebook image">
-							</a>
+						<li class="sns_facebook">
+							<a href="#" title="페이스북 바로가기"><span class="hid">페이스북</span></a>
 						</li>
-						<li>
-							<a href="#" title="RSS 바로가기">
-								<img src="images/rss-icon-24_1.png" alt="rss image">
-							</a>
+						<li class="sns_rss">
+							<a href="#" title="RSS 바로가기"><span class="hid">RSS</span></a>
 						</li>
-						<li>
-							<a href="#" title="이메일 바로가기">
-								<img src="images/email-icon-24_1.png" alt="email image">
-							</a>
+						<li class="sns_email">
+							<a href="#" title="이메일 바로가기"><span class="hid">이메일</span></a>
 						</li>
-						<li>
-							<a href="#" title="안드로이드 마켓 바로가기">
-								<img src="images/android-icon-24_1.png" alt="android image">
-							</a>
+						<li class="sns_android">
+							<a href="#" title="안드로이드 마켓 바로가기"><span class="hid">안드로이드</span></a>
 						</li>
 					</ul>
 				</div>
@@ -91,22 +86,38 @@
 					<div class="innerWrap iw1">
 						<h3>HEY!</h3>
 						<div class="about_pic">
-							<ul class="pic_left">
-								<li><a href="#"><img src="images/me1.jpg" alt="about me"></a></li>
-								<!--li><a href="#"><img src="images/me2.jpg" alt="about me"></a></li-->
-							</ul>
-							<ul class="pic_right">
-								<li><a href="images/ddalgi.jpg"><img src="images/ddalgi.jpg" alt="about my cat"></a></li>
+
+								<div class="pic_left">
+									<img src="images/me2.jpg" alt="about me">
+									<img src="images/me1.jpg" alt="about me">
+									<div></div>
+								</div>
+								<div class="pic_right"><img src="images/ddalgi.jpg" alt="about my cat"></div>
+
+
+
 								<!--li><a href="images/hodu.jpg"><img src="images/hodu.jpg" alt="about me"></a></li-->
-							</ul>
+
 						</div>
 						<ul class="aboutDesc">
 							<li class="adTit">Web Publisher && Front-end Developer | Park Gyu-Ae </li>
 							<li class="adSkill"><b>SKILLS :</b> Web Standard / Web Accessibility / JavaScript / jQuery / HTML5 / CSS3 <a href="#skills">
 								(+)</a></li>
-							<li class="aboutMe">술보다 커피를 사랑하는 웹 퍼블리셔 박규애입니다.<br>논리적이고 시멘틱한 코드를 사랑하며, 효율적이고 이해하기 쉬운 코드를 만들고자 노력하고 있습니다.</li>
+							<li class="aboutMe">술보다 커피를 사랑하는 웹 퍼블리셔 박규애입니다.<br>논리적이고 시멘틱한 코드를 지향하며, 효율적이고 이해하기 쉬운 코드를 만들고자 노력하고 있습니다.</li>
 						</ul>
+						<style>
 
+						</style>
+						<script>
+							$(function() {
+								//pic_left
+								$(".pic_left").bind("mouseenter", function() {
+									$(this).children("img:eq(1)").fadeOut(2000);
+								}).bind("mouseleave", function() {
+									$(this).children("img:eq(1)").fadeIn(2000);
+								});
+							});
+						</script>
 					</div>
 				</section>
 				<section id="portfolio">
@@ -241,30 +252,20 @@
 							</address>
 							<p>SAY HELLO!</p>
 							<ul class="sns s2">
-								<li>
-									<a href="#" title="트위터 바로가기">
-										<img src="images/twitter-icon-24_2.png" alt="twitter image">
-									</a>
+								<li class="sns_twitter2">
+									<a href="#" title="트위터 바로가기"><span class="hid">트위터</span></a>
 								</li>
-								<li>
-									<a href="#" title="페이스북 바로가기">
-										<img src="images/facebook-icon-24_2.png" alt="facebook image">
-									</a>
+								<li class="sns_facebook2">
+									<a href="#" title="페이스북 바로가기"><span class="hid">페이스북</span></a>
 								</li>
-								<li>
-									<a href="#" title="RSS 바로가기">
-										<img src="images/rss-icon-24_2.png" alt="rss image">
-									</a>
+								<li class="sns_rss2">
+									<a href="#" title="RSS 바로가기"><span class="hid">RSS</span></a>
 								</li>
-								<li>
-									<a href="#" title="이메일 바로가기">
-										<img src="images/email-icon-24_2.png" alt="email image">
-									</a>
+								<li class="sns_email2">
+									<a href="#" title="이메일 바로가기"><span class="hid">이메일</span></a>
 								</li>
-								<li>
-									<a href="#" title="안드로이드 마켓 바로가기">
-										<img src="images/android-icon-24_2.png" alt="android image">
-									</a>
+								<li class="sns_android2">
+									<a href="#" title="안드로이드 마켓 바로가기"><span class="hid">안드로이드</span></a>
 								</li>
 							</ul>
 						</div>
