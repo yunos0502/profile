@@ -26,8 +26,10 @@
 		<link rel="stylesheet" href="css/layout.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-		<script src="js/gmaps.js"></script>
+		<script src="js/jquery.easing.1.3.min.js"></script>
+		<script>
+		</script>
+
     </head>
 	<body>
 		<div id="wrapper">
@@ -51,17 +53,6 @@
 							</ul>
 						</nav>
 					</div>
-					<script>
-						$(function() {
-							$(".close_btn a").click(function() {
-								$(this).css({
-									'backgroundImage':'url("images/menu_btn.png")'
-								});
-								$('nav').hide();
-								$('#header_left p').animate({left: '30%'}, 1000);
-							});
-						});
-					</script>
 					<ul class="sns">
 						<li class="sns_twitter">
 							<a href="#" title="트위터 바로가기"><span class="hid">트위터</span></a>
@@ -103,21 +94,8 @@
 							<li class="adTit">Web Publisher && Front-end Developer | Park Gyu-Ae </li>
 							<li class="adSkill"><b>SKILLS :</b> Web Standard / Web Accessibility / JavaScript / jQuery / HTML5 / CSS3 <a href="#skills">
 								(+)</a></li>
-							<li class="aboutMe">술보다 커피를 사랑하는 웹 퍼블리셔 박규애입니다.<br>논리적이고 시멘틱한 코드를 지향하며, 효율적이고 이해하기 쉬운 코드를 만들고자 노력하고 있습니다.</li>
+							<li class="aboutMe"></li>
 						</ul>
-						<style>
-
-						</style>
-						<script>
-							$(function() {
-								//pic_left
-								$(".pic_left").bind("mouseenter", function() {
-									$(this).children("img:eq(1)").fadeOut(2000);
-								}).bind("mouseleave", function() {
-									$(this).children("img:eq(1)").fadeIn(2000);
-								});
-							});
-						</script>
 					</div>
 				</section>
 				<section id="portfolio">
@@ -125,27 +103,27 @@
 						<h3>CHECK <span class="nextLine">THIS OUT!</span></h3>
 						<ul>
 							<li class="myhome">
-								<a href="#" title="portfolio | myhome">
+								<a href="http://brownie-u.com/" title="portfolio | myhome" target="_blank">
 									<img src="images/po1.png" alt="myhome portfolio">
 								</a>
 							</li>
 							<li>
-								<a href="#" title="portfolio | cafe alice">
+								<a href="http://brownie-u.com/pore/" title="portfolio | cafe alice" target="_blank">
 									<img src="images/po2.png" alt="cafe alice portfolio">
 								</a>
 							</li>
 							<li>
-								<a href="#" title="portfolio | 한국철도시설공단 renewal">
+								<a href="http://brownie-u.com/po/" title="portfolio | 한국철도시설공단 renewal" target="_blank">
 									<img src="images/po3.png" alt="한국철도시설공단 renewal portfolio">
 								</a>
 							</li>
 							<li class="github">
-								<a href="#" title="portfolio | github">
+								<a href="https://github.com/yunos82" title="portfolio | github" target="_blank">
 									<img src="images/po4.png" alt="github portfolio">
 								</a>
 							</li>
 							<li>
-								<a href="#" title="portfolio | etc">
+								<a href="#" title="portfolio | etc" target="_blank">
 									<img src="images/po5.png" alt="etc portfolio">
 								</a>
 							</li>
@@ -155,19 +133,21 @@
 				<section id="education" class="bg_color">
 					<div class="innerWrap iw3">
 						<h3><span class="nextLine">THE</span>EDUCATION!</h3>
-						<div class="edu_java">
-							<article>
-								<time datetime="2015-07-28">2015년 07월 28일 수료</time>
-								<h4>웹퍼블리셔 기반의<br> 프론트엔드 개발자과정</h4>
-								<p>웹표준, 웹접근성, HTML5, CSS3, javascript, jQueryUI, 반응형 웹, PHP, MySQL</p>
-							</article>
-						</div>
-						<div class="edu_frontend">
-							<article>
-								<time datetime="2011-10-07">2011년 10월 7일 수료</time>
-								<h4>Java Web programming<br> MASTER</h4>
-								<p>JAVA, JSP, MySQL, HTML, CSS</p>
-							</article>
+						<div class="eduWrap">
+							<div class="edu_frontend">
+								<article>
+									<time datetime="2015-07-28">2015년 07월 28일 수료</time>
+									<h4>웹퍼블리셔 기반의<br> 프론트엔드 개발자과정</h4>
+									<p>웹표준, 웹접근성, HTML5, CSS3, javascript, jQueryUI, 반응형 웹, PHP, MySQL</p>
+								</article>
+							</div>
+							<div class="edu_java">
+								<article>
+									<time datetime="2011-10-07">2011년 10월 7일 수료</time>
+									<h4>Java Web programming<br> MASTER</h4>
+									<p>JAVA, JSP, MySQL, HTML, CSS</p>
+								</article>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -272,6 +252,9 @@
 						<div id="map"></div>
 					</div>
 				</section>
+				<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+				<script src="js/gmaps.js"></script>
+				<script src="js/typed.js"></script>
 				<script>
 					//gmap
 					var map = null;
@@ -285,6 +268,52 @@
 							"click":function(e) {console.log(e);},
 							"mouseover":function(e) {console.log(e);},
 							"infoWindow":{"content":"<p>You clicked here!</p><p><a href=\"https://www.google.com/maps/place/중화역/@37.602572,127.079285,17z/\" target=\"_blank\" style=\"font-size: 10px;\">Google 지도에서 보기</a></p>"}
+						});
+					});
+
+					$(function() {
+						//header 주메
+						var now = true;
+
+						$(".close_btn a").click(function() {
+							if(now === false) {
+								$(this).css({'backgroundImage':'url("images/menu_btn.png")'});
+								$('nav').stop(true, true).animate({left: '2000px'}, 1000, 'easeOutQuad');
+								$('#header_left p').stop(true, true).animate({left: '30%'}, 2500, 'easeOutElastic');
+								now = true;
+							}else {
+								$(this).css({'backgroundImage':'url("images/close_btn.png")'});
+								$('nav').stop(true, true).animate({left: '50%'}, 1800, 'easeOutQuad');
+								$('#header_left p').stop(true, true).animate({left: '0'}, 3500, 'easeOutElastic');
+								now = false;
+							}
+						});
+						$(window).ready(function() {
+							if($(this).scrollTop() === 0) {
+								$('#header_left p').stop(true, true).animate({'height': '252px'}, 4000, 'linear');
+							}
+						});
+						//pic_left
+						$(".pic_left").bind("mouseenter", function() {
+							$(this).children("img:eq(1)").fadeOut(2000);
+						}).bind("mouseleave", function() {
+							$(this).children("img:eq(1)").fadeIn(2000);
+						});
+						//aboutDesc
+						$(window).scroll(function () {
+							if ($(this).scrollTop() > $('header').height()/2) {
+								$(".aboutMe").typed({
+									strings: ["술보다 커피를 사랑하는 웹 퍼블리셔 박규애입니다.<br> 논리적이고 시멘틱한 코드를 지향하며, 효율적이고 이해하기 쉬운 코드를 만들고자 노력하고 있습니다."],
+									typeSpeed: 0
+								});
+							}
+						});
+						//education
+						$(window).scroll(function() {
+							if($(this).scrollTop() > $('header').height()+($('#about').height()*2.5)) {
+								$('.edu_frontend').animate({'left':'0'}, 6000, "easeOutElastic");
+								$('.edu_java').animate({'left':'0'}, 6000, "easeOutElastic");
+							}
 						});
 					});
 				</script>

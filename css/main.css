@@ -3,6 +3,7 @@ header { background: url("../images/header_bg.jpg") no-repeat center; }
     padding: 50px 0;
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 #header_left, #header_right { width: 585px; height: 760px; float: left; }
 h1 { width: 70px; height: 70px; margin-bottom: 200px; }
@@ -18,10 +19,11 @@ h1 a {
     font-size: 1.5em;
     font-weight: 600;
 }
-#header_left p { font-size: 5.25em; font-weight: 800; width: 585px; height: 252px; position: absolute; }
+#header_left p { font-size: 5.25em; font-weight: 800; width: 585px; height: 0px; position: absolute; left: 30%; overflow: hidden; }
 #header_left span.notBold { font-weight: 400; text-decoration: line-through; }
 .close_btn { height: 24px; margin-bottom: 255px; }
-.close_btn a { display: block; width: 31px; height: 26px; background-image: url("../images/close_btn.png"); background-repeat: no-repeat; float: right; }
+.close_btn a { display: block; width: 31px; height: 26px; background-image: url("../images/menu_btn.png"); background-repeat: no-repeat; float: right; }
+nav { position: absolute; width: 585px; height: 390px; left: 999%; }
 nav li { width: 270px; height: 45px; float: left; margin-bottom: 150px; }
 nav li a {
     display: block;
@@ -51,7 +53,7 @@ h3 { width: 370px; font-size: 2.5em; font-weight: 700; margin: 0 auto; padding-b
 .pic_left { width: 300px; height: 400px; float: left; margin-right: 10px; overflow: hidden; cursor: pointer; }
 .pic_left img { position: absolute; }
 .pic_right { width: 400px; height: 295px; overflow: hidden; }
-.aboutDesc { position: absolute; right: 0; bottom: 0; width: 600px; text-align: left; font-size: 1.4em; line-height: 1.5em; background-color: rgba(255, 255, 255, 0.3); padding: 15px; }
+.aboutDesc { position: absolute; right: 0; bottom: 0; width: 600px; height: 165px; text-align: left; font-size: 1.4em; line-height: 1.5em; background-color: rgba(255, 255, 255, 0.3); padding: 15px; }
 .adSkill { font-size: 0.6em; }
 .adSkill a { color: rgba(27,173,138,.99); }
 .aboutMe { font-family:'nbg'; font-size: 0.8em; }
@@ -67,13 +69,15 @@ h3 { width: 370px; font-size: 2.5em; font-weight: 700; margin: 0 auto; padding-b
 #education { background-color: #f7f7f1; }
 .innerWrap.iw3 { background: url("../images/edu_bg.png") no-repeat 950px 400px; }
 #education article h4 { font-size: 1.9em; font-weight: 600; margin-bottom: 10px; }
+.eduWrap { position: relative; width: 100%; height: 460px; overflow: hidden; }
 time { font-size: 0.83em; line-height: 3em; }
 #education p { width: 370px; font-family: 'Lato', sans-serif; font-size: 1.2em; line-height: 1.3em; }
-.edu_java { background: url("../images/edu2.png") no-repeat 350px 20px; margin-bottom: 140px; }
-.edu_java article { width: 570px; float: right }
-.edu_frontend { background: url("../images/edu1.png") no-repeat 640px 10px; }
-#education .edu_frontend p { float: right; }
-.edu_frontend article { width: 500px; text-align: right; }
+.edu_java, .edu_frontend { width: 100%; height: 160px; position: absolute; }
+.edu_frontend { background: url("../images/edu2.png") no-repeat 350px 20px; left: 2000px; }
+.edu_frontend article { width: 570px; float: right }
+.edu_java { background: url("../images/edu1.png") no-repeat 640px 10px; top: 300px; left: -2000px; }
+#education .edu_java p { float: right; }
+.edu_java article { width: 500px; text-align: right; }
 #skills h3 { width: 230px; background: url("../images/portfolio_tit_bg.png") no-repeat 80px 18px; padding-bottom: 80px; }
 .skillWrap { position: relative; width: 100%; height: 890px; }
 .skill { position: absolute; }
