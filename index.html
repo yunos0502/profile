@@ -101,28 +101,28 @@
 				<section id="portfolio">
 					<div class="innerWrap iw2">
 						<h3>CHECK <span class="nextLine">THIS OUT!</span></h3>
-						<ul>
-							<li class="myhome">
+						<ul id="poWrap">
+							<li class="poEach myhome">
 								<a href="http://brownie-u.com/" title="portfolio | myhome" target="_blank">
 									<img src="images/po1.png" alt="myhome portfolio">
 								</a>
 							</li>
-							<li>
+							<li class="poEach cafe">
 								<a href="http://brownie-u.com/pore/" title="portfolio | cafe alice" target="_blank">
 									<img src="images/po2.png" alt="cafe alice portfolio">
 								</a>
 							</li>
-							<li>
+							<li class="poEach renewal">
 								<a href="http://brownie-u.com/po/" title="portfolio | 한국철도시설공단 renewal" target="_blank">
 									<img src="images/po3.png" alt="한국철도시설공단 renewal portfolio">
 								</a>
 							</li>
-							<li class="github">
+							<li class="poEach github">
 								<a href="https://github.com/yunos82" title="portfolio | github" target="_blank">
 									<img src="images/po4.png" alt="github portfolio">
 								</a>
 							</li>
-							<li>
+							<li class="poEach etc">
 								<a href="#" title="portfolio | etc" target="_blank">
 									<img src="images/po5.png" alt="etc portfolio">
 								</a>
@@ -130,6 +130,16 @@
 						</ul>
 					</div>
 				</section>
+				<script>
+					$(function() {
+						$('.poEach a').mouseenter(function() {
+							$(this).append("<div class='selected'><p>aa</p></div>");
+							$(this).children('img').css({'width':'110%','position':'absolute'});
+						}).mouseleave(function() {
+							$(this).children('.selected').remove();
+						});
+					});
+				</script>
 				<section id="education" class="bg_color">
 					<div class="innerWrap iw3">
 						<h3><span class="nextLine">THE</span>EDUCATION!</h3>
@@ -289,9 +299,9 @@
 							}
 						});
 						$(window).ready(function() {
-							if($(this).scrollTop() === 0) {
+							//if($("#header_wrap").scrollTop() === 0) {
 								$('#header_left p').stop(true, true).animate({'height': '252px'}, 4000, 'linear');
-							}
+							//}
 						});
 						//pic_left
 						$(".pic_left").bind("mouseenter", function() {
