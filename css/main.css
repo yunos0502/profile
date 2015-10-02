@@ -79,32 +79,9 @@ time { font-size: 0.83em; line-height: 3em; }
 .edu_java { background: url("../images/edu1.png") no-repeat 640px 10px; top: 300px; left: -2000px; }
 #education .edu_java p { float: right; }
 .edu_java article { width: 500px; text-align: right; }
-#skills h3 { width: 230px; background: url("../images/portfolio_tit_bg.png") no-repeat 80px 18px; padding-bottom: 80px; }
-.skillWrap { position: relative; width: 100%; height: 890px; }
-.skill { position: absolute; }
-.skill img { width: 50%; }
-.skill.me { top: 45%; left: 45%; width: 100px; height: 100px; line-height: 100px; text-align: center; font-size: 2em; background-color:
-rgba(27,173,138,.99); color: #fff; font-weight: 800;
-    border-radius: 50px; opacity: 0.7; }
-.skill.ms { top: 5%; left: 15%; }
-.skill.twt { top: 30%; left: 2%; }
-.skill.en { bottom: 10%; left: 5%; }
-.skill.gg { bottom: 0; right: 10%; }
-.skill.ap { top: 40%; left: 20%; }
-.skill.gh { top: 60%; left: 0; }
-.skill.js { top: 20%; left: 20%; }
-.skill.jq { top: 15%; right: 20%; }
-.skill.css { top: 60%; left: 25%; }
-.skill.html { top: 30%; left: 40%; }
-.skill.php { top: 10%; right: 40%; }
-.skill.ps { top: 30%; right: 5%; }
-.skill.pg { bottom: 10%; left: 30%; }
-.skill.sql { top: 30%; right: 30%; }
-.skill.ad { bottom: 20%; right: 0; }
-.skill.ff { bottom: 25%; right: 30%; }
-.skill.cr { bottom: 20%; right: 50%; }
-.skill.coda { bottom: 15%; right: 15%; }
-.skill.st { top: 50%; right: 0; }
+/*.innerWrap.iw4 { background: url("../images/skill_bg1.png") no-repeat left 200px; }*/
+#skills h3 { width: 230px; background: url("../images/portfolio_tit_bg.png") no-repeat 80px 18px; padding-bottom: 120px; }
+.skillWrap { position: relative; width: 100%; height: 600px; }
 .innerWrap.iw5 { width: 970px; height: 800px; padding: 0 100px; }
 #contact h3 { width: 230px; background: url("../images/contact_tit_bg.png") no-repeat 150px 18px; padding-bottom: 150px; }
 #contact .nextLine { padding-left: 70px; }
@@ -196,3 +173,88 @@ footer address a { color: #fff; font-weight: 100; }
     letter-spacing: 0.3em;
     font-family: 'Lato', sans-serif;
 }
+
+/* skill */
+.skillWrap iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/**  pc2 [1600~      ]  **/
+@media  all  and  (  min-width:1600px ){     }
+/**  pc1 [1024~1599]  **/
+@media  all  and  (  min-width:1024px  )  and  (  max-width:1599px  ){
+    #header_wrap { width: 100%; }
+    #header_left, #header_right { width: 50%; }
+    h1 { margin-left: 10px; }
+    #header_left p { left: 25%; font-size: 5em; margin-left: 20px; }
+    .close_btn { margin-right: 10px; }
+    .sns { margin-left: 10px; }
+    .innerWrap { width: 100%; }
+    .about_pic { padding-left: 10px; }
+    .aboutDesc {
+        width: 450px;
+        height: 140px;
+        font-size: 1.1em;
+        margin-right: 10px;
+    }
+    #portfolio, .innerWrap.iw2 {
+        height: 841px;
+        padding-left: 5%;
+    }
+    #poWrap { width: 100%; margin: 0 auto; }
+    .poEach { width: 30%; height: 30%; }
+    .poEach.myhome { width: 60%; }
+    .selected p {
+        width: 82%;
+        height: 49.6%;
+        padding-top: 27%;
+    }
+    .myhome .selected p {
+        height: 46.6%;
+    }
+    .innerWrap.iw3 { background-position: 848px 400px; }
+    .edu_frontend { background-position: 210px 20px; }
+    .edu_java { background-position: 623px 10px; }
+    .innerWrap.iw5 { padding: 0 27px; }
+}
+/**  태블릿2 [768~ 1023]  **/
+@media  all  and  (  min-width:768px  )  and  (  max-width:1023px  ){
+    #header_wrap { width: 100%; }
+    #header_left, #header_right { width: 50%; }
+    h1 { margin-left: 10px; }
+    #header_left p { left: 25%; font-size: 5em; margin-left: 20px; }
+    .close_btn { margin-right: 10px; }
+    .sns { margin-left: 10px; }
+    .innerWrap { width: 100%; }
+    .about_pic { padding-left: 10px; }
+    .aboutDesc {
+        width: 450px;
+        height: 140px;
+        font-size: 1.1em;
+        margin-right: 10px;
+    }
+    #portfolio, .innerWrap.iw2 {
+        height: 841px;
+        padding-left: 5%;
+    }
+    #poWrap { width: 100%; margin: 0 auto; }
+    .poEach { width: 30%; height: 30%; }
+    .poEach.myhome { width: 60%; }
+    .selected p {
+        width: 82%;
+        height: 49.6%;
+        padding-top: 27%;
+    }
+    .myhome .selected p {
+        height: 46.6%;
+    }
+    .innerWrap.iw3 { background-position: 848px 400px; }
+    .edu_frontend { background-position: 210px 20px; }
+    .edu_java { background-position: 623px 10px; }
+    .innerWrap.iw5 { padding: 0 27px; }
+}
+/**  태블릿1 [481~767]  **/
+@media  all  and  (  min-width:481px  )  and  (  max-width:767px  ){    }
+/**  모바일 [~480]  **/
+@media  all  and    (  max-width:480px  ){   }

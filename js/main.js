@@ -19,7 +19,7 @@ $(function() {
 
 $(function() {
     //header 주메
-    var now = true;
+    var now = false;
 
     $(".close_btn a").bind('click focusin', function() {
         if(now === false) {
