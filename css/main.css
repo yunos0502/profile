@@ -183,42 +183,29 @@ footer address a { color: #fff; font-weight: 100; }
 /**  pc2 [1600~      ]  **/
 @media  all  and  (  min-width:1600px ){}
 /**  pc1 [1024~1599]  **/
-@media  all  and  (  min-width:1024px  )  and  (  max-width:1599px  ){}
+@media  all  and  (  min-width:1024px  )  and  (  max-width:1599px  ){
+    #wrapper { height: 6877px; }
+    #content { height: 5617px; }
+    #header_wrap { width: 1024px; }
+    #header_left, #header_right { width: 50%; }
+    .innerWrap { width: 1024px; }
+    #poWrap {
+        width: 77%;
+        margin: 0 auto;
+    }
+    #portfolio { height: 1397px; }
+    .innerWrap.iw3 { background-position: 849px 400px; }
+    .edu_frontend { background-position: 208px 20px; }
+    .innerWrap.iw5 { width: 924px; padding: 0 50px; }
+    #map { width: 67%; }
+}
 /**  태블릿2 [768~ 1023]  **/
 @media  all  and  (  min-width:768px  )  and  (  max-width:1023px  ){
-    #header_wrap { width: 100%; }
+    #header_wrap {
+        width: 748px;
+        padding: 50px 10px;
+    }
     #header_left, #header_right { width: 50%; }
-    h1 { margin-left: 10px; }
-    #header_left p { left: 25%; font-size: 5em; margin-left: 20px; }
-    .close_btn { margin-right: 10px; }
-    .sns { margin-left: 10px; }
-    .innerWrap { width: 100%; }
-    .about_pic { padding-left: 10px; }
-    .aboutDesc {
-        width: 450px;
-        height: 140px;
-        font-size: 1.1em;
-        margin-right: 10px;
-    }
-    #portfolio, .innerWrap.iw2 {
-        height: 841px;
-        padding-left: 5%;
-    }
-    #poWrap { width: 100%; margin: 0 auto; }
-    .poEach { width: 30%; height: 30%; }
-    .poEach.myhome { width: 60%; }
-    .selected p {
-        width: 82%;
-        height: 49.6%;
-        padding-top: 27%;
-    }
-    .myhome .selected p {
-        height: 46.6%;
-    }
-    .innerWrap.iw3 { background-position: 848px 400px; }
-    .edu_frontend { background-position: 210px 20px; }
-    .edu_java { background-position: 623px 10px; }
-    .innerWrap.iw5 { padding: 0 27px; }
 }
 /**  태블릿1 [481~767]  **/
 @media  all  and  (  min-width:481px  )  and  (  max-width:767px  ){    }
